@@ -1,0 +1,413 @@
+header
+    background: url("../img/bg_header.jpg") center (center / cover) no-repeat
+    padding-bottom: 70px
+
+.head__wrap
+    display: flex
+    justify-content: space-between
+                                          // ============== LOGO
+.logo
+    &__img
+        display: block
+        width: 100%
+        padding-top: 24px
+        padding-left: 52px
+    &__link
+        color: #ffffff
+        font-size: 30px
+        font-weight: 700
+        +hover_cursor
+.menu                                      // ============== MENU
+    padding-top: 56px
+    border-bottom: 2px solid #d1d3de
+    margin-left: 104px
+    &__item
+        display: flex
+        list-style-type: none
+        padding: 0
+        a
+            color: #fff
+            font-size: 15px
+            font-weight: 700
+            &:hover
+                text-decoration: none
+                width: 80px
+                padding-bottom: 19px
+                border-bottom: 4px solid $col_1
+                transition: 0.6s all
+    &__list
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
+.btn                                    // ============= BTN
+    padding-top: 45px
+    &__head
+        padding: 11px
+        color: $col_1
+        background-color: #fff
+        font-size: 15px
+        font-weight: 700
+        border-radius: 25px
+        border: none
+        +focus_btn_line
+    &__sub
+        margin-left: 70px
+        padding: 12px 28px
+        letter-spacing: 0.4px
+    &__location
+        margin-left: 25px
+        padding: 10px 28px
+        border: 1px solid #fff
+        border-radius: 25px
+        color: #ffffff
+        font-size: 15px
+        font-weight: 400
+        background: transparent
+        +focus_btn_line
+    &__img
+        padding-right: 10px
+
+                                         // ============= Заголовок
+
+.title
+    margin-left: 70px
+    h1
+        margin-top: 194px
+        color: #ffffff
+        font-size: 65px
+        font-weight: 700
+    .sub__title
+        margin-top: 19px
+        width: 420px
+        height: 63px
+        color: #ffffff
+        font-size: 15px
+        font-weight: 400
+        line-height: 25px
+                                     // =========== Секция 2 
+
+.block2
+    padding: 111px 0 156px 0
+    background-color: #f6f7fb
+.services
+    display: flex
+    justify-content: center
+    align-items: center
+    &__item
+        width: 330px
+        height: 330px
+        padding-left: 38px
+        padding-right: 46px
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.02)
+        border-radius: 10px
+        background-color: #ffffff
+        img
+            padding-top: 48px
+    &__link
+        color: $col_1
+        font-size: 13px
+        font-weight: 400
+        text-decoration: underline
+        letter-spacing: -0.26px
+        cursor: pointer
+    &__right
+        margin-left: 70px
+        width: 330px
+        height: 330px
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.02)
+        border-radius: 10px
+        background-color: #273164
+        h2
+            color: #ffffff
+        p
+            color: #ffffff
+            opacity: 0.6
+h2
+    padding-top: 27px
+    color: $col_2
+    font-size: 18px
+    font-weight: 700
+p
+    color: #b4b4b4
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+                                     // ============ Секция 3 
+.block3
+    padding: 135px 0 162px 0
+
+.cleaning
+    h2
+        width: 100%
+    &__text
+        display: flex
+        justify-content: space-between
+        margin-top: 49px
+        position: relative
+        span
+            font-weight: 700
+            text-decoration: underline
+        p
+            color: #b4b4b4
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+            width: 451px
+    &__img
+        min-width: 50%
+        position: absolute
+        top: 128%
+        left: -1%
+        z-index: 2
+                                     // ============ Секция 4 
+.block4
+    padding: 390px 0 83px 0
+    background-color: #f6f7fb
+    position: relative
+    &__clin
+        max-width: 560px
+        position: absolute
+        top: 18%
+        right: 0%
+        z-index: 1
+    &__title
+        h2
+            margin-top: 22px
+            width: 392px
+            color: $col_2
+            font-size: 28px
+            font-weight: 700
+            padding: 0
+        h3
+            height: 16px
+            color: $col_1
+            font-size: 13px
+            font-weight: 600
+            text-transform: uppercase
+    p
+        padding-top: 35px
+        width: 449px
+        color: $col_4
+        font-size: 14px
+        font-weight: 400
+        line-height: 26px
+    &__item
+        padding-top: 40px
+        color: $col_2
+        font-size: 16px
+        font-weight: 700
+        list-style-type: none
+        line-height: 35px
+        padding-left: 34px
+
+                             // ========= на списке Галочки оранжевые
+
+.block4__list
+    list-style: none
+    position: relative
+    &:before
+        content: ''
+        width: 10px
+        height: 4px
+        border-radius: 2px
+        background-color: $col_1
+        top: 8px
+        position: absolute
+        margin-left: -33px
+    &:after
+        content: ''
+        width: 14px
+        height: 4px
+        border-radius: 2px
+        background-color: $col_1
+        top: 8px
+        position: absolute
+        margin-left: -33px
+    &:before
+        transform: rotate(56deg)
+        left: 1px
+        top: 10px
+    &:after
+        transform: rotate(-65deg)
+        left: 3px
+
+                                     // ============ Секция 5 
+.block5__wrap
+    display: flex
+    justify-content: space-between
+    padding: 159px 0 162px 0
+
+.block5__left
+    p
+        margin-top: 59px
+        width: 356px
+        color: $col_4
+        font-size: 14px
+        font-weight: 400
+        line-height: 24px
+    .block5__bedrooms,.block5__bathrooms
+        display: inline-block
+        width: 200px
+    input                           // =======================  INPUT
+        border: none
+        margin: 0 10px
+        font-weight: 700
+        text-align: center
+        vertical-align: super
+        +focus_btn_line
+    input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
+        appearance: none
+        margin: 0
+
+.block5__btn                   // =======================  BUTTON
+    p
+        color: $col_1
+        font-size: 16px
+        font-weight: 700
+        margin-bottom: 30px
+    a.block5__btn1     // ======   левая кнопка
+        +padding_btn
+        +hover_btn
+        border-radius: 23px
+        border: 2px solid rgba(244, 94, 31, 0.35)
+        margin-right: 25px
+        background-color: #fff9f6
+        color: $col_1
+        font-weight: 600
+    a.block6__btn1            // ===== левая кнопка Block6
+        padding: 15px 18px
+    a.block5__btn2           // ======   правая кнопка
+        +padding_btn
+        +hover_btn
+        border-radius: 23px
+        border: 2px solid rgba(102, 110, 145, 0.3)
+        color: $col_4
+        font-weight: 600
+    a.block6__btn2           // ===== правая кнопка Block6
+        padding: 15px 50px
+.block5__bedrooms,.block5__bathrooms    // ======   круглые кнопки больше меньше
+    button
+        position: relative
+        margin-top: 10px
+        width: 34px
+        height: 34px
+        border-radius: 100%
+        border: 2px solid #efefef
+        +focus_btn_line
+    .minus
+        &:before
+            content: ''
+            width: 15px
+            height: 3px
+            background-color: #b4b4b4
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+    .plus
+        &::before
+            content: ''
+            width: 15px
+            height: 3px
+            background-color: #b4b4b4
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+        &::after
+            content: ''
+            width: 3px
+            height: 15px
+            background-color: #b4b4b4
+            position: absolute
+            top: 50%
+            transform: translate(-50%,-50%)
+    p      //===============================================================================
+        color: $col_1
+        font-size: 14px
+        font-weight: 700
+        margin-bottom: 30px
+.block5__right
+    width: 500px
+    height: 443px
+    background-color: #273164
+
+                            //=========== Секция 6 
+
+.block6
+    padding: 120px 0 139px 0
+    background-color: #f6f7fb
+    h2
+        font-size: 25px
+        font-weight: 600
+    &__wrapp
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+    &__content
+        margin-right: 16px
+        padding: 40px 35px 25px 28px
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.02)
+        background-color: #ffffff
+    p
+        padding-top: 20px
+        margin: 0
+        max-width: 330px
+        color: $col_2
+        font-size: 16px
+        font-weight: 600
+        line-height: 20px
+    p ~ p
+        color: $col_1
+        font-size: 15px
+        font-weight: 600
+        span
+            color: #b4b4b4
+            font-weight: 400
+    &__btn
+        text-align: center
+        h2
+            padding-top: 120px
+            padding-bottom: 60px
+            font-size: 20px
+.footer                                 // ============ FOOTER
+    margin: 158px 0 31px 0
+    &__wrapp
+        display: flex
+        justify-content: space-between
+        border-bottom: 2px solid #d1d3de
+        padding-bottom: 100px
+        h2
+            margin-bottom: 31px
+    p
+        margin-top: 31px
+        color: #676f92
+        font-size: 14px
+        font-weight: 400
+    &__social,&__contact
+        p
+            width: 152px
+            color: #676f92
+            font-size: 14px
+            font-weight: 400
+            //margin-bottom: 0
+            line-height: 30px
+    &__social
+        a
+            margin-top: 30px
+            margin-right: 15px
+            margin-bottom: 30px
+            text-decoration: none
+    a.footer__link
+        display: block
+        color: #676f92
+        font-size: 14px
+        font-weight: 400
+        line-height: 30px
+    &__contact
+        a.footer__link
+            &:last-child
+                color: $col_1
+                text-decoration: underline
+                font-size: 19px
+                margin-top: 30px
